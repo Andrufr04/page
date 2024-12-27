@@ -1,0 +1,40 @@
+nav {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8BC34A;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #8BC34A;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}

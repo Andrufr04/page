@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/basis.css">
+    <link rel="stylesheet" href="styles/menu/navbarHeader.css">
+    <link rel="stylesheet" href="styles/menu/logo.css">
+    <link rel="stylesheet" href="styles/menu/icon.css">
+    <link rel="stylesheet" href="styles/menu/cart.css">
+    <link rel="stylesheet" href="styles/content/products.css">
+    <link rel="stylesheet" href="styles/sidebar/category.css">
+    <link rel="stylesheet" href="styles/content/pagination.css">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <header>
+        <logo class="logo">
+            <img src="imgs/LogoImg.png" alt="">
+        </logo>
+
+        <div class="menu">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">Shop</a>
+                <a href="#services">Portfolio</a>
+                <a href="#portfolio">Blog</a>
+                <a href="#contact">Features</a>
+            </nav>
+            <div class="cart-text-conte">
+                <div class="cart-icon">
+                    <img src="imgs/icon-font-shopping-cart-3916627.png" alt="Корзина">
+                    <div class="cart-count">0</div>
+                </div>
+                <div class="cart-text">
+                    <div>Your cart</div>
+                    <div>$0.00</div>
+                </div>
+            </div>
+            <div><img src="imgs/icon-font-search.png" alt="search" id="searchIcon"></div>
+            <div><img src="imgs/icon-font-menu-burger-3917762.png" alt=""></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <div>
+                <h2>Product Categories</h2>
+                <div class="category-list">
+                    <input type="checkbox" value="Kalanchoe"> Каланхоэ<br>
+                    <input type="checkbox" value="Monstera"> Монстера<br>
+                    <input type="checkbox" value="Begonia"> Бегония<br>
+                    <input type="checkbox" value="cactus"> Кактусы<br>
+                    <input type="checkbox" value="orchid"> Орхидея<br>
+                    <input type="checkbox" value="bonsai"> Бонсай<br>
+                    <input type="checkbox" value="cyclamen"> Цикламен<br>
+                </div>
+                
+                
+            </div>
+            <form id="filterForm">
+                <input type="text" id="nameFilter" placeholder="Название">
+                <select id="stockFilter">
+                    <option value="all">Все</option>
+                    <option value="inStock">В наличии</option>
+                    <option value="outOfStock">Нет в наличии</option>
+                </select>
+                <input type="number" id="minPrice" placeholder="Минимальная цена">
+                <input type="number" id="maxPrice" placeholder="Максимальная цена">
+                <button type="submit">Применить фильтр</button>
+            </form>
+            
+        </div>
+
+        <div class="content">
+            <div class="product-grid" id="productGrid"></div>
+
+            <div style="color: black; align-items: center; text-align: center; margin-top: 10px;">
+                <div class="pagination"></div>
+            </div>
+            
+
+        </div>
+
+    </main>
+
+    <footer>
+        Футер
+    </footer>
+
+    <script src="js/products-card.js"></script>
+
+</body>
+
+</html>

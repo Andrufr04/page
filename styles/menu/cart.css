@@ -1,0 +1,18 @@
+.menu .cart-text-conte{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu .cart-text-conte .cart-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
